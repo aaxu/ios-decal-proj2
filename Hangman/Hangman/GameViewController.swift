@@ -21,7 +21,19 @@ class GameViewController: UIViewController {
     let winGame = UIAlertController(title: "You Won!", message: nil, preferredStyle: UIAlertControllerStyle.alert)
     let loseGame = UIAlertController(title: "You Lost!", message: nil, preferredStyle: UIAlertControllerStyle.alert)
     
-
+    @IBAction func textFieldDidChange(sender: UITextField) {
+        let lastChar = sender.text?.unicodeScalars
+        if sender.text?.characters.count != 0 && (!(CharacterSet.letters.contains((lastChar?[(lastChar?.index(before: (lastChar?.endIndex)!))!])!))) {
+            sender.text?.remove(at: (sender.text?.index(before: (sender.text?.endIndex)!))!)
+        }
+        if ((sender.text?.characters.count)! > 1) {
+            var empty = ""
+            empty.append((sender.text?[(sender.text?.index((sender.text?.startIndex)!, offsetBy: (sender.text?.characters.count)! - 1))!])!)
+            sender.text = empty
+        }
+        sender.text = sender.text?.uppercased()
+    }
+    
     @IBAction func guessButton(_ sender: UIButton) {
         if let letter = guess.text {
             if !(pastGuesses.text?.contains(letter))! && guess.text != "" {
@@ -29,9 +41,6 @@ class GameViewController: UIViewController {
                 var counter = 0
                 var correct = 0
                 for x in (phrase?.characters)! {
-                    print(letter)
-                    print(x)
-                    print(phrase?[(phrase?.index((phrase?.startIndex)!, offsetBy: counter))!])
                     var temp = ""
                     temp.append(x)
                     temp = temp.lowercased()
@@ -84,6 +93,7 @@ class GameViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         setupParams()
+        guess.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
         winGame.addAction(UIAlertAction(title: "New Game", style: UIAlertActionStyle.default, handler: {(alert: UIAlertAction!) in self.setupParams()}))
         loseGame.addAction(UIAlertAction(title: "New Game", style: UIAlertActionStyle.default, handler: {(alert: UIAlertAction!) in self.setupParams()}))
         view.addSubview(hangman)

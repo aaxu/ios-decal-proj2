@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Hangman/GameViewController.swift"
-            timestampString = "500439564.660015"
+            timestampString = "500522557.210582"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "guessButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,13 +26,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Hangman/GameViewController.swift"
-            timestampString = "500511840.69016"
+            timestampString = "500522557.210582"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "guessButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hangman/GameViewController.swift"
+            timestampString = "500522375.843503"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "guessButton(_:)"
+            landmarkName = "textFieldDidChange(sender:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.GameViewController.textFieldDidChange (sender : __ObjC.UITextField) -&gt; ()"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Leeann/Desktop/iOSDecal/ios-decal-proj2/Hangman/Hangman/GameViewController.swift"
+                  timestampString = "500522375.976757"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "454">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.GameViewController.textFieldDidChange (sender : __ObjC.UITextField) -&gt; ()"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Leeann/Desktop/iOSDecal/ios-decal-proj2/Hangman/Hangman/GameViewController.swift"
+                  timestampString = "500522375.979016"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "4803">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
